@@ -58,6 +58,8 @@ img {
   flex-direction: column;
 }
 .product__img {
+  width: 100%;
+  height: 15rem;
 }
 .product__details {
   padding: 0.5rem;
