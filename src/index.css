@@ -47,6 +47,7 @@ img {
 }
 
 .products {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
@@ -58,6 +59,7 @@ img {
   flex-direction: column;
 }
 .product__img {
+ 
 }
 .product__details {
   padding: 0.5rem;
