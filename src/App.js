@@ -84,10 +84,12 @@ const products = [
 ];
 
 const App = () => {
+  console.log('hel;loo');
   return (
     <div>
-      <h1 className="title">BD Store</h1>
-      <Products  />
+      <h1 className="title">BD Store made by emrul biplob</h1>
+      {/* <h3>{products[0].description}</h3> */}
+      <Products products={products} />
     </div>
   );
 };
