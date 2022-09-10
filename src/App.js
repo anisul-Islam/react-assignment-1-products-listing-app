@@ -2,7 +2,7 @@ import React from 'react';
 
 import Products from './components/Products';
 
-const products = [
+export const products = [
   {
     id: 1,
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
