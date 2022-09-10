@@ -82,12 +82,15 @@ const products = [
     }
   }
 ];
+console.log(products);
 
 const App = () => {
   return (
     <div>
-      <h1 className="title">BD Store</h1>
-      <Products  />
+      <h1 className="title" style={{ color: 'white' }}>
+        BD Store
+      </h1>
+      <Products products={products} />
     </div>
   );
 };
