@@ -17,12 +17,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+   "eslintConfig": {
+     "extends": [
+       "react-app",
+       "react-app/jest"
+     ]
+   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,8 +42,10 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.0",
     "prettier": "^2.7.1"
-  },
-  "lint": "eslint .",
-  "lint:fix": "eslint --fix",
-  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  }
+,
+ "lint": "eslint .",
+"lint:fix": "eslint --fix",
+"format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc" 
+  
 }
