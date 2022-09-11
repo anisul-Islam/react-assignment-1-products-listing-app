@@ -2,6 +2,8 @@
 
 ## Total points = 5
 
+# Assignment completed
+
 ### Purpose of this assignment :
 
 - Testing students skills on
@@ -9,6 +11,7 @@
   - props
 
 ### [Click here to see the project demo](https://react-assignment-1-products-listing.netlify.app/)
+### I'm failed to deploy the site in netlify
 
 ### Assignment steps:
 
