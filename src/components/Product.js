@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Product = ({newData}) => {
-  const { title, price, description, category, image, rating} = newData
+  const { title, price, description, image, rating} = newData
   console.log(newData)
   return (
       <article className="product">
