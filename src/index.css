@@ -29,9 +29,10 @@ img {
   padding: 0.2rem;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-
+  background-color: white;
   width: 5rem;
   color: rgb(195, 154, 77);
+  font-size: 13px;
 }
 
 .btn:hover {
@@ -44,6 +45,8 @@ img {
   margin: 1rem 0;
   color: white;
   font-size: 2rem;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .products {
@@ -56,6 +59,7 @@ img {
   background-color: #2c2c2c;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .product__img {
 }
@@ -71,16 +75,21 @@ img {
   font-size: 0.8rem;
   color: white;
   font-family: fantasy;
+  line-height: normal;
 }
 .product__title {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
 }
 .product__price {
   color: orange;
+  font-family:'Times New Roman', Times, serif;
 }
 .product__rating {
   color: orange;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: -8px;
 }
 
 @media (max-width: 768px) {
