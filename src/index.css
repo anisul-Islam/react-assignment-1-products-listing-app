@@ -10,6 +10,7 @@
   list-style-type: none;
   text-decoration: none;
   outline: none;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -58,9 +59,11 @@ img {
   flex-direction: column;
 }
 .product__img {
+  width: 100%;
+  height: 15rem;
 }
 .product__details {
-  padding: 0.5rem;
+  padding:0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
