@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200;500&family=Rubik+Moonrocks&display=swap');
+
+font-face{
+font-family: 'Dosis', sans-serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Anton', sans-serif;
+}
+
+
 :root {
   --border-radius: 0.6rem;
-  --text-color: #fff;
+  /* --text-color: #fff; */
+  --text-color:black;
 }
 
 * {
@@ -16,11 +26,12 @@ html {
 }
 
 body {
-  background-color: #4c4c4c;
+  /* background-color: #4c4c4c; */
+  background-color: rgb(253, 235, 235);
 }
 
 img {
-  width: 100%;
+  width: 90%;
   height: 15rem;
 }
 
@@ -29,7 +40,7 @@ img {
   padding: 0.2rem;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-
+  cursor: pointer;
   width: 5rem;
   color: rgb(195, 154, 77);
 }
@@ -38,12 +49,16 @@ img {
   background-color: orange;
   color: black;
 }
-
+.bdcol{
+  color: red;
+}
 .title {
   text-align: center;
   margin: 1rem 0;
-  color: white;
-  font-size: 2rem;
+  color: rgb(123, 91, 91);
+  font-family: Rubik Moonrocks;
+  font-weight: 200;
+  font-size: 3.5rem;
 }
 
 .products {
@@ -51,15 +66,21 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   padding: 0.5rem;
+   
 }
 .product {
-  background-color: #2c2c2c;
+   background-color: white;
+  box-shadow: 2px 4px 4px grey;
   display: flex;
   flex-direction: column;
+  border-radius: 3%;
+  
 }
-.product__img {
+.product:hover{
+  box-shadow: 2px 4px 4px black;
 }
-.product__details {
+
+.product_details {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -67,20 +88,28 @@ img {
   font-weight: 100;
 }
 
-.product__desc {
-  font-size: 0.8rem;
-  color: white;
-  font-family: fantasy;
+.product_desc {
+  font-family: Dosis, sans-serif ;
+  font-weight: 400;
+  font-size: .85rem;
+  color: rgb(74, 58, 58);
+  text-align: justify;
+  }
+.product_title {
+  color:black;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  font-size: .90rem;
 }
-.product__title {
-  color: white;
-  font-family: 'Roboto', sans-serif;
+.product_price {
+  color: rgb(131, 88, 7);
+  font-family: Dosis, sans-serif ;
+  font-weight: 400;
 }
-.product__price {
-  color: orange;
-}
-.product__rating {
-  color: orange;
+.product_rating {
+  color: rgb(148, 150, 10);
+  font-family: Dosis, sans-serif ;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
