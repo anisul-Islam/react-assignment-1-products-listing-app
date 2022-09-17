@@ -41,7 +41,7 @@ img {
 
 .title {
   text-align: center;
-  margin: 1rem 0;
+  padding: 1rem 0;
   color: white;
   font-size: 2rem;
 }
@@ -56,8 +56,6 @@ img {
   background-color: #2c2c2c;
   display: flex;
   flex-direction: column;
-}
-.product__img {
 }
 .product__details {
   padding: 0.5rem;
