@@ -8,7 +8,7 @@ const Products = (props) => {
   // console.log(props);
   const productsData = products.map((product, index) => (
     <Product
-      id={index}
+      id={product.id}
       title={product.title}
       price={product.price}
       description={product.description}
