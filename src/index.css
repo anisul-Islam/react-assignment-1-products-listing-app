@@ -11,6 +11,7 @@
   text-decoration: none;
   outline: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,17 +49,25 @@ img {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  padding: .5rem;
   gap: 1rem;
-  padding: 0.5rem;
+  border-radius: 100px;
 }
+
 .product {
   background-color: #2c2c2c;
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  width: fit-content;
 }
+
 .product__img {
+  width: 100%;
 }
+
 .product__details {
   padding: 0.5rem;
   display: flex;
@@ -72,13 +81,16 @@ img {
   color: white;
   font-family: fantasy;
 }
+
 .product__title {
   color: white;
   font-family: 'Roboto', sans-serif;
 }
+
 .product__price {
   color: orange;
 }
+
 .product__rating {
   color: orange;
 }
@@ -88,6 +100,7 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 @media (max-width: 600px) {
   .products {
     grid-template-columns: repeat(1, minmax(0, 1fr));
