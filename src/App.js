@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Products from './components/Products';
+import Products from './components/Products/Products';
 
 const products = [
   {
@@ -83,11 +83,16 @@ const products = [
   }
 ];
 
-const App = () => {
+const App = () => {   
+  const style = {
+    padding: "15px",
+    color: "white",
+    textAlign: "center"
+  }        
   return (
     <div>
-      <h1 className="title">BD Store</h1>
-      <Products  />
+      <h1 style={style} >BD Store</h1>
+      <Products products={products} />
     </div>
   );
 };
