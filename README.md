@@ -1,3 +1,23 @@
+Hello sir,
+In this assignment after installing npm I don't know why I getting error every time.
+here is screenshot of the error message.
+
+![problem](<./screenshots/Screenshot%20(84).png>)
+
+So, I tried to find out the solution and then I added
+
+<pre>
+"prettier/prettier": [
+  "error",
+  {
+    "endOfLine": "auto",
+  }
+]
+</pre>
+
+inside the rules object of the eslintrc file.Then it worked 1st time and after edit again another error massage appeared.Screenshots of error massage attached bellow.
+![problem](<./screenshots/Screenshot%20(86).png>)
+
 # React assigment - 1 : Product listing App
 
 ## Total points = 5
