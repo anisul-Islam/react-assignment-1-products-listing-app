@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #4c4c4c;
+  background-color: #e4d2d2;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
 
 .btn:hover {
   background-color: orange;
-  color: black;
+  color: rgb(165, 157, 157);
 }
 
 .title {
@@ -53,11 +53,23 @@ img {
   padding: 0.5rem;
 }
 .product {
-  background-color: #2c2c2c;
+  background-color: #51c4b0;
   display: flex;
   flex-direction: column;
+  border-radius: 5%;
 }
 .product__img {
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  padding: 5px;
+  width: 60%;
+  margin: 5% 0px 0px 20%;
+}
+
+.product__img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  border: 10px solid rgb(16, 211, 146);
+  transform: scaleX(-1);
 }
 .product__details {
   padding: 0.5rem;

@@ -1,8 +1,9 @@
 {
-  "semi": true,
+  "printWidth": 80,
+  "eslintIntegration": true,
+  "stylelintIntegration": true,
   "tabWidth": 2,
-  "printWidth": 100,
   "singleQuote": true,
-  "trailingComma": "none",
-  "jsxBracketSameLine": true
+  "semi": false,
+  "endOfLine": "auto"
 }
