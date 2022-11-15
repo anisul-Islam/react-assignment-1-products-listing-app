@@ -56,8 +56,13 @@ img {
   background-color: #2c2c2c;
   display: flex;
   flex-direction: column;
+  width: 32%;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
 }
 .product__img {
+  width: 100%;
 }
 .product__details {
   padding: 0.5rem;
