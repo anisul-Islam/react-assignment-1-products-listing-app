@@ -88,7 +88,7 @@ const App = () => {
   return (
     <div>
       <h1 className="title">Bd Store</h1>
-          <div className='contain'> {products.map((items)=> <Products  
+      <div className='contain'> {products.map((items)=> <Products  
       key={ items.id } 
       // title={items.title}
       // price={items.price}
