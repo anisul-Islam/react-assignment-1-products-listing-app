@@ -84,10 +84,22 @@ const products = [
 ];
 
 const App = () => {
+
   return (
     <div>
-      <h1 className="title">BD Store</h1>
-      <Products  />
+      <h1 className="title">Bd Store</h1>
+      <div className='contain'> {products.map((items)=> <Products  
+      key={ items.id } 
+      // title={items.title}
+      // price={items.price}
+      // description={items.description}
+      // catagory={items.catagory}
+      // image={items.image}
+      // count={items.rating.count}
+      // rate={items.rating.rate}
+      value={ items }
+      />)  }</div>
+     
     </div>
   );
 };
