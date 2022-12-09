@@ -2,10 +2,10 @@ import Product from './Product';
 
 /* eslint-disable react/prop-types */
 
-const Products = (props) => {
+const Products = ({ products }) => {
   return (
     <section className="products">
-      {props.products.map((pro, index) => (
+      {products.map((pro, index) => (
         <Product
           key={index}
           title={pro.title}
