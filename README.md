@@ -8,7 +8,7 @@
   - creating, styling & mapping components
   - props
 
-### [Click here to see the project demo](https://react-assignment-1-products-listing.netlify.app/)
+### [Click here to see the project demo](https://react-assignment-1-by-sa.netlify.app/)
 
 ### Assignment steps:
 
