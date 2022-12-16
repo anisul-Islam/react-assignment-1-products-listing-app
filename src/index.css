@@ -47,16 +47,15 @@ img {
 }
 
 .contain{
-  width: 100vw;
+  padding:15px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 15px;
-  
+  grid-gap: 5px;
 }
 
 .products {
   background-color: #2c2c2c;
-  margin: 10px;
+  margin-left: 15 px;
 }
 /* .product {
  
