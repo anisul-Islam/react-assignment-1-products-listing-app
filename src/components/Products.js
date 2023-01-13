@@ -4,14 +4,15 @@ import Product from './Product';
 const Products = (props) => {
     let items = [];
     items = props.items;
-    return items.map((item) => {
-        <Product 
+    return (items.map((item, index) => {
+        return <Product 
+            key={index}
             title={item.title} 
             price={item.price} 
-            desc={item.price} 
-            category={item.category} 
+            desc={item.desc} 
             image={item.image} 
-            rate={item.rating.rate}/>
-    })
+            rate={item.rating.rate}
+            />
+    }));
 }
 export default Products;
