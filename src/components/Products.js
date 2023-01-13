@@ -9,7 +9,7 @@ const Products = (props) => {
             key={index}
             title={item.title} 
             price={item.price} 
-            desc={item.desc} 
+            desc={item.description} 
             image={item.image} 
             rate={item.rating.rate}
             />

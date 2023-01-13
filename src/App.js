@@ -85,8 +85,10 @@ const products = [
 const App = () => {
   return (
     <div>
-      <h1 className="title">BD Store</h1>
-      <Products items={products}/>
+      <h1 className="title">Open Store</h1>
+      <div className="prod">
+        <Products items={products}/>
+      </div>
     </div>
   );
 };
