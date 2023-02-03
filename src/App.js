@@ -1,5 +1,5 @@
+/* eslint-disable */
 import React from 'react';
-
 import Products from './components/Products';
 
 const products = [
@@ -84,10 +84,26 @@ const products = [
 ];
 
 const App = () => {
+//   const productContainer = [];
+//   const product = products.map((item) => {
+//     const { image, title, price, description, rating } = item;
+//     <Products img={image} title={title} price={price} rating={rating.rate} desc={description}/>
+//   });
+// productContainer.push.product;
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <Products  />
+      <div className="products">
+        {products.map((item , index) => {
+    const { image, title, price, description, rating } = item;
+   return <Products key={index} img={image} title={title} price={price} rating={rating.rate} desc={description}/>
+  })}
+        {/* <Products img="" title="" price="" rating="" desc="" />
+        <Products />
+        <Products />
+        <Products />
+        <Products /> */}
+      </div>
     </div>
   );
 };
