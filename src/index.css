@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --border-radius: 0.6rem;
   --text-color: #fff;
 }
@@ -17,6 +17,7 @@ html {
 
 body {
   background-color: #5a5a5a;
+  width: 100%;
 }
 
 img {
@@ -29,7 +30,6 @@ img {
   padding: 0.2rem;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-
   width: 5rem;
   color: rgb(195, 154, 77);
 }
@@ -45,7 +45,6 @@ img {
   color: white;
   font-size: 2rem;
 }
-
 .products {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -92,4 +91,4 @@ img {
   .products {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-} */
+}
