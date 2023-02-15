@@ -29,7 +29,7 @@ img {
   padding: 0.2rem;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-
+  border-radius: 0.6rem;
   width: 5rem;
   color: rgb(195, 154, 77);
 }
@@ -47,6 +47,7 @@ img {
 }
 
 .products {
+  grid-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
@@ -74,12 +75,15 @@ img {
 }
 .product__title {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .product__price {
   color: orange;
 }
 .product__rating {
+  color: orange;
+}
+.product__count {
   color: orange;
 }
 

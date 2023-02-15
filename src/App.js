@@ -1,6 +1,7 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-
 import Products from './components/Products';
+
 
 const products = [
   {
@@ -83,13 +84,15 @@ const products = [
   }
 ];
 
-const App = () => {
-  return (
-    <div>
-      <h1 className="title">BD Store</h1>
-      <Products  />
-    </div>
-  );
-};
 
-export default App;
+function App() {
+   return(
+       <div>
+          <h1 className='title'>BD Store</h1>
+          <Products products={products}/>
+       </div>
+   )
+}
+
+
+export default App
