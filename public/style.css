@@ -1,0 +1,11 @@
+.product {
+    width: 100%;
+}
+.products {
+    display: flex;
+    flex-direction: row;
+}
+.p_price,
+.p_rating {
+    color: orange;
+}
