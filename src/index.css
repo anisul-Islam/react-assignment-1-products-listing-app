@@ -29,7 +29,7 @@ img {
   padding: 0.2rem;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-
+  
   width: 5rem;
   color: rgb(195, 154, 77);
 }
@@ -46,19 +46,24 @@ img {
   font-size: 2rem;
 }
 
-.products {
+.contain{
+  padding:15px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  padding: 0.5rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 5px;
 }
-.product {
+
+.products {
   background-color: #2c2c2c;
+  margin-left: 15 px;
+}
+/* .product {
+ 
   display: flex;
   flex-direction: column;
-}
-.product__img {
-}
+} */
+/* .product__img {
+} */
 .product__details {
   padding: 0.5rem;
   display: flex;
