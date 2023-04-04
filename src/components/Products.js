@@ -10,7 +10,7 @@ function Products(props) {
     return(<Product key={product.id} product={product} />)
   })
   return(
-    <section>
+    <section className="products">
       {product}
     </section>
   )
