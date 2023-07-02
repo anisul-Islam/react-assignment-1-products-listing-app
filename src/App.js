@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 
 import Products from './components/Products';
@@ -82,12 +83,21 @@ const products = [
     }
   }
 ];
+// console.log(products[0].rating.rate);
+let items = [];
+for (let i = 0; i < products.length; i++) {
+  items.push( <Products title={products[i].title} price={products[i].price} description={products[i].description} category={products[i].category} image={products[i].image} rate={products[i].rating.rate}  />)
+
+
+}
 
 const App = () => {
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <Products  />
+
+      <section className='products'>{items}</section>
+
     </div>
   );
 };
