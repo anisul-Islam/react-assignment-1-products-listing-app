@@ -4,7 +4,7 @@ export default function Products({current}) {
     console.log();
   return (
     <>
-    {current.map(data=><Product key={Math.random()} title={data.title} img_src={data.image} price={data.price} description={data.description} rating={data.rating.rate}/>)}
+    {current.map(data=><Product key={data.id} product = {data}/>)}
     </>
   )
 }
