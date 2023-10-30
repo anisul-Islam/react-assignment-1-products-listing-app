@@ -87,7 +87,9 @@ const App = () => {
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <Products  />
+      <section className='products'>
+        <Products current={products} />
+      </section>
     </div>
   );
 };
