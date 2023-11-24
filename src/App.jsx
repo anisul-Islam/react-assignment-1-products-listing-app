@@ -1,7 +1,6 @@
 import React from 'react';
-
-import Products from './components/Products';
-
+import Product from './components/Product';
+import { v4 as uuidv4 } from 'uuid';
 const products = [
   {
     id: 1,
@@ -87,7 +86,18 @@ const App = () => {
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <Products  />
+      <section className="products">
+        {products.map((value) => (
+          <Product
+            key={uuidv4()}
+            img_src={value.image}
+            productTitle={value.title}
+            price={value.price}
+            productRating={value.rating.rate}
+            description={value.description}
+          />
+        ))}
+      </section>
     </div>
   );
 };
