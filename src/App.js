@@ -84,20 +84,12 @@ const products = [
 ];
 
 const App = () => {
+
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <section className='products'>
-        {products.map(item => <Products
-          key={item.id} 
-          title={item.title}
-          price={item.price}
-          description={item.description}
-          rating={item.rating['rate']}
-          image={item.image}
-
-        />)}
-      </section>
+      <Products products={products}  />
+      
     </div>
   );
 };
