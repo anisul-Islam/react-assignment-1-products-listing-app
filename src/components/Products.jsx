@@ -1,12 +1,12 @@
-/* eslint-disable react/prop-types */
+import { v4 as uuidv4 } from 'uuid';
 import React from 'react';
 import './ProductStyle.css'
 
-const Products = ({img, title, price, rating, desc, index}) => {
+const Products = ({img, title, price, rating, desc, id}) => {
     return (
-        <div className='card' key={index}>
+        <div className='card' key={id}>
             <img className='card-img' src={img} alt="" />
-            <div className='card-content'>
+            <div className='card-content' key={id}>
             <h2 className='card-title'>{title}</h2>
             <p className='card-price'>Price: ${price}</p>
             <p className='card-rating'>Rating: {rating}/5</p>

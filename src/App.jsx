@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { v4 as uuidv4 } from 'uuid';
 import Products from './components/Products';
 
 const products = [
@@ -89,7 +89,7 @@ const App = () => {
       <h1 className="title">BD Store</h1>
       <div className='card-container'>
       {
-        products.map(product => <Products  img={product.image} title={product.title} price={product.price} rating={product.rating.rate} desc={product.description}/>)
+        products.map(product => <Products key={product.id}  img={product.image} title={product.title} price={product.price} rating={product.rating.rate} desc={product.description}/>)
       }
       </div>
     </div>
